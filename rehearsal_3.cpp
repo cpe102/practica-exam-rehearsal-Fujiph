@@ -1,7 +1,14 @@
 #include <iostream>
-
-//Write sumSqrt() here.
-
+#include<cmath> 
+using namespace std;
+float sumSqrt( double N ) {
+    double sum=0;
+    while ( N>=1 ){
+        sum = sum + 1/(pow(N,1/2));
+        N = N-1 ;
+        return sum;
+    } 
+}
 
 int main()
 {
